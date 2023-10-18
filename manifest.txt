@@ -1,0 +1,1 @@
+Main-Class: com.generate_edr_activity.Main;
