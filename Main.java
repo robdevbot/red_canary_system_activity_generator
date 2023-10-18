@@ -23,7 +23,7 @@ class Main {
             String[] processArgs = {"notepad", "new.txt"};
             startProcess(processArgs);
         } else if (osName.contains("linux")) {
-            String[] processArgs = {"open", "-t new.txt"};
+            String[] processArgs = {"gedit", "new.txt"};
             startProcess(processArgs);
         } else if (osName.contains("mac")) {
             String[] processArgs = {"open", "-t new.txt"};
@@ -93,7 +93,7 @@ class Main {
 
     public static void deleteFile(String filename) {
         try {
-            File fileToDelete = new File("filename.txt"); 
+            File fileToDelete = new File(filename); 
             fileToDelete.delete();
         } catch (Exception err) {
             System.out.println("Could not delete file.");
